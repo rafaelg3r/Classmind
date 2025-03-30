@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pborder-BR">
   <head>
+    <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classmind</title>
+    <title>ClassMind</title>
     <link rel="stylesheet" href="./src/css/main.css" />
   </head>
 
   <body>
     <header>
       <!-- <img src="" alt=""> -->
-      LOGO
+      <a href="index.html">
+        <h1>ClassMind</h1>
+      </a>
       <div class="header-nav">
-        <span>Linkedin</span>
-        <span>Discord</span>
-        <!-- <img src="" alt="">
-        <img src="" alt=""> -->
+        
         <button>Apoiar</button>
       </div>
     </header>
     <section class="general">
       <div class="menu-sidebar">
         <h2>Menu</h2>
-        <ul>
-          <li>Matérias</li>
-          <li>Atividades</li>
-          <li>Configurações</li>
-        </ul>
+        <div class="hr" style="width: 100%;">.</div>
+        <a href="#">Inicio</a>
+        <a href="index.html">Class</a>
+        <a href="#" class="disable">Calendario</a>
       </div>
 
       <div class="main-content">
-        <!-- Português -->
+        <!--! Português -->
         <div
           class="splide"
           id="task-carousel-pt"
@@ -41,7 +41,7 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <div class="task-card">
+                <div class="task-card border-atvd">
                   <div class="task-info">
                     <h3 class="task-title">Redação sobre Meio Ambiente</h3>
                     <p class="task-desc">
@@ -51,13 +51,76 @@
                   </div>
                   <div class="task-details">
                     <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type">Trabalho</p>
+                    <p class="task-box task-type color-atvd">Atividade</p>
+                    <p class="task-box task-points">1 ponto</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-trab">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">2 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-prova">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-prova">Prova</p>
+                    <p class="task-box task-points">5 pontos</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr">.</div>
+
+        <!--! Matemática -->
+        <div
+          class="splide"
+          id="task-carousel-mat"
+          role="group"
+          aria-label="Matemática"
+        >
+          <h2>Matemática</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="task-card border-atvd">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
                     <p class="task-box task-points">8/10 pontos</p>
                   </div>
                 </div>
               </li>
               <li class="splide__slide">
-                <div class="task-card">
+                <div class="task-card border-trab">
                   <div class="task-info">
                     <h3 class="task-title">Redação sobre Meio Ambiente</h3>
                     <p class="task-desc">
@@ -67,13 +130,13 @@
                   </div>
                   <div class="task-details">
                     <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type">Trabalho</p>
+                    <p class="task-box task-type color-trab">Trabalho</p>
                     <p class="task-box task-points">8/10 pontos</p>
                   </div>
                 </div>
               </li>
               <li class="splide__slide">
-                <div class="task-card">
+                <div class="task-card border-trab">
                   <div class="task-info">
                     <h3 class="task-title">Redação sobre Meio Ambiente</h3>
                     <p class="task-desc">
@@ -83,7 +146,7 @@
                   </div>
                   <div class="task-details">
                     <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type">Trabalho</p>
+                    <p class="task-box task-type color-trab">Trabalho</p>
                     <p class="task-box task-points">8/10 pontos</p>
                   </div>
                 </div>
@@ -91,105 +154,275 @@
             </ul>
           </div>
         </div>
-        <hr>
-        <!-- Matemática -->
-        <div
-        class="splide"
-        id="task-carousel-mat"
-        role="group"
-        aria-label="Matemática"
-      >
-        <h2>Matemática</h2>
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="task-card">
-                <div class="task-info">
-                  <h3 class="task-title">Redação sobre Meio Ambiente</h3>
-                  <p class="task-desc">
-                    Escrever uma redação de no mínimo 30 linhas sobre os
-                    impactos ambientais.
-                  </p>
-                </div>
-                <div class="task-details">
-                  <div class="task-box task-subject">Português</div>
-                  <p class="task-box task-type">Trabalho</p>
-                  <p class="task-box task-points">8/10 pontos</p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="task-card">
-                <div class="task-info">
-                  <h3 class="task-title">Redação sobre Meio Ambiente</h3>
-                  <p class="task-desc">
-                    Escrever uma redação de no mínimo 30 linhas sobre os
-                    impactos ambientais.
-                  </p>
-                </div>
-                <div class="task-details">
-                  <div class="task-box task-subject">Português</div>
-                  <p class="task-box task-type">Trabalho</p>
-                  <p class="task-box task-points">8/10 pontos</p>
-                </div>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="task-card">
-                <div class="task-info">
-                  <h3 class="task-title">Redação sobre Meio Ambiente</h3>
-                  <p class="task-desc">
-                    Escrever uma redação de no mínimo 30 linhas sobre os
-                    impactos ambientais.
-                  </p>
-                </div>
-                <div class="task-details">
-                  <div class="task-box task-subject">Português</div>
-                  <p class="task-box task-type">Trabalho</p>
-                  <p class="task-box task-points">8/10 pontos</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </div>
+        <div class="hr">.</div>
 
-      <!-- end main-content -->
-      <div class="test">
+        <!--! Geografia -->
+        <div
+          class="splide"
+          id="task-carousel-geo"
+          role="group"
+          aria-label="Geografia"
+        >
+          <h2>Geografia</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="task-card border-prova">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-teste">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-atvd">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr">.</div>
+
+        <!--! História -->
+        <div
+          class="splide"
+          id="task-carousel-his"
+          role="group"
+          aria-label="História"
+        >
+          <h2>História</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="task-card border-teste">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-prova">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-trab">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr">.</div>
+
+        <!--! Física -->
+        <div
+          class="splide"
+          id="task-carousel-fis"
+          role="group"
+          aria-label="Fisica"
+        >
+          <h2>Fisíca</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="task-card border-atvd">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-teste">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-prova">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr">.</div>
+
+        <!--! Biologia -->
+        <div
+          class="splide"
+          id="task-carousel-bio"
+          role="group"
+          aria-label="Biologia"
+        >
+          <h2>Biologia</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="task-card border-atvd">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-teste">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="task-card border-prova">
+                  <div class="task-info">
+                    <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+                    <p class="task-desc">
+                      Escrever uma redação de no mínimo 30 linhas sobre os
+                      impactos ambientais.
+                    </p>
+                  </div>
+                  <div class="task-details">
+                    <div class="task-box task-subject">Português</div>
+                    <p class="task-box task-type color-trab">Trabalho</p>
+                    <p class="task-box task-points">8/10 pontos</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <!-- end main-content -->
+      </div>
+      <div class="recentes">
         <h2>Atividades recentes</h2>
       </div>
 
-      <div class="calendar" id="calendar">
+      <div class="calendar hidden" id="calendar">
         <h2>Calendário</h2>
         <p>Datas de entrega e provas.</p>
+        <h2 style="color: red; margin-top: 1rem;">Indisponivel</h2>
       </div>
       <button class="toggle-btn" onclick="toggleCalendar()">📅</button>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide1 = new Splide("#task-carousel-pt", {
-          type: "normal",
-          perPage: 2,
-        }).mount()
-        var splide2 = new Splide("#task-carousel-mat", {
-          type: "normal",
-          perPage: 2,
-        }).mount()
-        var splide3 = new Splide("#task-carousel-geo", {
-          type: "normal",
-          perPage: 2,
-        }).mount()
-        var splide4 = new Splide("#task-carousel-his", {
-          type: "normal",
-          perPage: 2,
-        }).mount()
-        
-      })
-
-    </script>
+    <script type="module" src="src/js/main.js"></script>
     <script>
       function toggleCalendar() {
         document.getElementById("calendar").classList.toggle("hidden")
