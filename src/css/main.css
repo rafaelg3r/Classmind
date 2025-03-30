@@ -2,7 +2,6 @@
 @import url("menu-bar.css");
 @import url("main-content.css");
 @import url("calendar.css");
-@import url("../../node_modules/@splidejs/splide/dist/css/splide.min.css");
 * {
   box-sizing: border-box;
   padding: 0;
