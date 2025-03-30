@@ -1,0 +1,22 @@
+
+@import url("general.css");
+@import url("menu-bar.css");
+@import url("main-content.css");
+@import url("calendar.css");
+@import url("../../node_modules/@splidejs/splide/dist/css/splide.min.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #333;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem;
+}
+
