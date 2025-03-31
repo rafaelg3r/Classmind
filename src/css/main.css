@@ -6,7 +6,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: GG sans;
 }
 
 :root {
@@ -25,6 +24,42 @@
   --trab: rgb(236, 198, 26);
   --teste: rgb(236, 127, 26);
   --prova: rgb(236, 33, 26);
+
+  --Inter: "Inter";
+  --Jakarta: "Plus Jakarta";
+}
+
+
+p,
+span,
+a {
+  font-family: var(--Inter);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--Jakarta);
+  font-weight: 400;
+  color: white;
+}
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+p,
+span {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-family: var(--Jakarta);
 }
 
 .splide {

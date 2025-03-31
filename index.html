@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pborder-BR">
   <head>
-    <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClassMind</title>
     <link rel="stylesheet" href="./src/css/main.css" />
-    <link rel="stylesheet" href="./src/css/splide.min.css">
+    <link rel="stylesheet" href="./src/css/splide.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -17,17 +22,30 @@
         <h1>ClassMind</h1>
       </a>
       <div class="header-nav">
-        
         <button>Apoiar</button>
       </div>
     </header>
     <section class="general">
       <div class="menu-sidebar">
-        <h2>Menu</h2>
-        <div class="hr" style="width: 100%;">.</div>
-        <a href="#">Inicio</a>
-        <a href="index.html">Class</a>
-        <a href="#" class="disable">Calendario</a>
+        <a href="#" class="selected-menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7263 0.893424L18.2842 5.00321C19.3553 5.77925 19.9927 7.02008 20 8.34373V15.7835C19.9312 18.1691 17.9518 20.0518 15.5684 19.9987H4.44211C2.05466 20.0577 0.0688305 18.1733 0 15.7835V8.34373C0.0073259 7.02008 0.644652 5.77925 1.71579 5.00321L7.27368 0.893424C8.89647 -0.297808 11.1035 -0.297808 12.7263 0.893424ZM5.26322 15.5411H14.7369C15.1729 15.5411 15.5264 15.1872 15.5264 14.7507C15.5264 14.3142 15.1729 13.9604 14.7369 13.9604H5.26322C4.8272 13.9604 4.47374 14.3142 4.47374 14.7507C4.47374 15.1872 4.8272 15.5411 5.26322 15.5411Z" fill="#83838B"/>
+            </svg>
+          <span>Home</span></a
+        >
+        <a href="index.html">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 13.52V4.28571C20 1.91878 17.9349 0 15.3875 0H4.61255C2.06511 0 0 1.91878 0 4.28571V16.3314C0 18.3575 1.76773 20 3.94834 20H19.0775C19.587 20 20 19.6162 20 19.1429C20 18.6695 19.587 18.2857 19.0775 18.2857H3.94834C2.78671 18.2857 1.84502 17.4108 1.84502 16.3314C1.84502 15.2521 2.78671 14.3771 3.94834 14.3771H19.0775C19.587 14.3771 20 13.9934 20 13.52Z" fill="#83838B"/>
+            <path d="M3.94834 15.4743C3.43885 15.4743 3.02583 15.858 3.02583 16.3314C3.02583 16.8048 3.43885 17.1886 3.94834 17.1886H17.5646C18.0741 17.1886 18.4871 16.8048 18.4871 16.3314C18.4871 15.858 18.0741 15.4743 17.5646 15.4743H3.94834Z" fill="#83838B"/>
+            </svg>
+            <span>Class</span></a
+        >
+        <a href="#" class="disable">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9 2.38294H15C17.7614 2.38294 20 4.45858 20 7.01901V15.3639C20 17.9244 17.7614 20 15 20H5C3.67392 20 2.40215 19.5116 1.46447 18.6421C0.526784 17.7727 0 16.5935 0 15.3639V7.01901C0 4.45858 2.23858 2.38294 5 2.38294H5.1V0.69541C5.1 0.311346 5.43579 0 5.85 0C6.26421 0 6.6 0.311346 6.6 0.69541V2.38294H13.4V0.69541C13.4 0.311346 13.7358 0 14.15 0C14.5642 0 14.9 0.311346 14.9 0.69541V2.38294ZM5.5 8.02967H14.5C14.9142 8.02967 15.25 7.71832 15.25 7.33426C15.25 6.9502 14.9142 6.63885 14.5 6.63885H5.5C5.08579 6.63885 4.75 6.9502 4.75 7.33426C4.75 7.71832 5.08579 8.02967 5.5 8.02967Z" fill="#83838B"/>
+            </svg>
+            <span>Calendario</span></a
+        >
       </div>
 
       <div class="main-content">
@@ -51,9 +69,11 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-atvd">Atividade</p>
-                    <p class="task-box task-points">1 ponto</p>
+                    <h4 class="task-box task-subject">
+                      Português
+                    </h4>
+                    <h4 class="task-box task-type color-atvd">Atividade</h4>
+                    <h4 class="task-box task-points">1 ponto</h4>
                   </div>
                 </div>
               </li>
@@ -67,9 +87,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">2 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</p>
+                    <h4 class="task-box task-points">2 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -83,9 +103,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-prova">Prova</p>
-                    <p class="task-box task-points">5 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type" color-prova">Prova</h4>
+                    <h4 class="task-box task-points">5 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -114,9 +134,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -130,9 +150,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -146,9 +166,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -177,9 +197,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -193,9 +213,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -209,9 +229,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -240,9 +260,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -256,9 +276,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -272,9 +292,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -303,9 +323,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -319,9 +339,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -335,9 +355,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -366,9 +386,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -382,9 +402,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -398,9 +418,9 @@
                     </p>
                   </div>
                   <div class="task-details">
-                    <div class="task-box task-subject">Português</div>
-                    <p class="task-box task-type color-trab">Trabalho</p>
-                    <p class="task-box task-points">8/10 pontos</p>
+                    <h4 class="task-box task-subject">Português</h4>
+                    <h4 class="task-box task-type color-trab">Trabalho</h4>
+                    <h4 class="task-box task-points">8/10 pontos</h4>
                   </div>
                 </div>
               </li>
@@ -418,7 +438,7 @@
       <div class="calendar hidden" id="calendar">
         <h2>Calendário</h2>
         <p>Datas de entrega e provas.</p>
-        <h2 style="color: red; margin-top: 1rem;">Indisponivel</h2>
+        <h2 style="color: red; margin-top: 1rem">Indisponivel</h2>
       </div>
       <button class="toggle-btn" onclick="toggleCalendar()">📅</button>
     </section>
