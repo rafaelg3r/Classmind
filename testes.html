@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Rocketseat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            width: 600px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 12px;
+            border-radius: 8px;
+            min-width: 60px;
+        }
+
+        .date .day {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .date .month {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #bbb;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .details {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #1db954;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .hidden-cards {
+            display: none;
+        }
+
+        .show-more {
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #222;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="date">
+                <div class="day">31</div>
+                <div class="month">MAR</div>
+            </div>
+            <div class="content">
+                <div class="details">Online, Youtube</div>
+                <div class="title">Por dentro da Rocketseat <span class="tag">GRÁTIS</span></div>
+                <div class="details">Chegou o momento de ficar "Por dentro da Rocketseat" 🚀 Garanta seu lugar, tire suas dúvidas ao vivo sobre a plataforma...</div>
+            </div>
+        </div>
+
+        <div class="hidden-cards" id="hiddenCards">
+            <div class="card">
+                <div class="date">
+                    <div class="day">31</div>
+                    <div class="month">MAR</div>
+                </div>
+                <div class="content">
+                    <div class="details">Online, Youtube</div>
+                    <div class="title">Por dentro da Rocketseat 🚀 <span class="tag">GRÁTIS</span></div>
+                    <div class="details">Conheça por completo a plataforma, a comunidade e todos os eventos e benefícios que você tem direito como aluno...</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="date">
+                    <div class="day">01</div>
+                    <div class="month">ABR</div>
+                </div>
+                <div class="content">
+                    <div class="details">Online, Palco de Alunos - Discord</div>
+                    <div class="title">☕ Café com Instrutores: Inteligência Emocional <span class="tag">ASSINANTES</span></div>
+                    <div class="details">O Café com Instrutores é um evento online, ao vivo e semanal que acontece às terças-feiras na comunidade da Rocketseat!...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-more" onclick="toggleCards()">Ver mais</div>
+    </div>
+
+    <script>
+        function toggleCards() {
+            var hiddenCards = document.getElementById("hiddenCards");
+            var button = document.querySelector(".show-more");
+            if (hiddenCards.style.display === "none" || hiddenCards.style.display === "") {
+                hiddenCards.style.display = "block";
+                button.textContent = "Ver menos";
+            } else {
+                hiddenCards.style.display = "none";
+                button.textContent = "Ver mais";
+            }
+        }
+    </script>
+
+</body>
+</html>

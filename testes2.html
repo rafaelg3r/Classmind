@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <style>
+      body {
+        background-color: var(--dark-grey);
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .main-content {
+        overflow-y: visible;
+        min-width: 100rem;
+        z-index: 0;
+        display: block;
+        flex-flow: row;
+        gap: 0;
+
+        background: var(--dark-grey);
+        align-items: normal;
+        padding-bottom: 0;
+        scrollbar-gutter: stable;
+        box-shadow: inset 1px 0 0 var(--semi-light-grey);
+        h3 {
+          padding: 0.5rem 0.8rem 0.5rem 0;
+          background-color: none;
+          border-radius: 0.3rem;
+        }
+      }
+
+      .task-card {
+        background: var(--semi-mid-grey);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2rem;
+        max-width: 100rem;
+        border-radius: 8px;
+        box-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+        gap: 2rem;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          filter: brightness(1.2);
+        }
+
+        .task-info {
+          flex: 1;
+        }
+        .task-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          background: none;
+          color: white;
+        }
+        .task-desc {
+          margin: 5px 0;
+          font-size: 14px;
+          color: var(--light-light-grey);
+        }
+        .task-details {
+          display: flex;
+          flex-flow: column;
+          text-align: right;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .task-box {
+          background: var(--semi-light-grey);
+          padding: 3px 8px;
+          border-radius: 5px;
+          margin: 3px 0;
+          width: fit-content;
+        }
+
+        .task-subject {
+          color: var(--light-blue);
+        }
+
+        .task-points {
+          color: #28a745;
+        }
+      }
+      .task-date {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 1rem;
+        span {
+          color: white;
+          font-weight: 600;
+        }
+      }
+      .separator {
+        background-color: var(--semi-light-grey);
+        height: 8rem;
+        width: 1px;
+        content: " ";
+      }
+      .task-info-separator {
+        display: flex;
+        flex-flow: row;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="task-card border-atvd">
+        <div class="task-date">
+          <span>31</span>
+          <span>Mar</span>
+        </div>
+          <div class="task-info-separator">
+            <div class="separator"></div>
+            <div class="task-info">
+            <h3 class="task-title">Redação sobre Meio Ambiente</h3>
+            <p class="task-desc">
+              Escrever uma redação de no mínimo 30 linhas sobre os impactos
+              ambientais.
+            </p>
+          </div>
+        </div>
+        <div class="task-details">
+          <h4 class="task-box task-subject">Português</h4>
+          <h4 class="task-box task-type color-atvd">Atividade</h4>
+          <h4 class="task-box task-points">1 ponto</h4>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
