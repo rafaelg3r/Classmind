@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 body {
   overflow: hidden;
