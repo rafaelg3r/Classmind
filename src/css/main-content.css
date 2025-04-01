@@ -1,5 +1,6 @@
 .main-content {
-  overflow: scroll;
+  overflow-y: scroll;
+  /* overflow: scroll; */
   min-width: 50rem;
   z-index: 1;
   display: flex;
