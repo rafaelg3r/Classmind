@@ -1,3 +1,3 @@
 Organizador de trabalhos escolares
 <br/>
-Link: https://rafaelg3r.github.io/Site-estudantes/
+Link: https://rafaelg3r.github.io/Classmind-SR/
