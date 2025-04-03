@@ -14,6 +14,9 @@
   .task-card {
     min-width: 100%;
   }
+  .trimestres a{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
