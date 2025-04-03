@@ -1,4 +1,5 @@
 @import url("general.css");
+@import url("header.css");
 @import url("menu-bar.css");
 @import url("main-content.css");
 @import url("calendar.css");
@@ -30,39 +31,6 @@
 
   --Inter: "Inter";
   --Jakarta: "Plus Jakarta";
-}
-
-
-p,
-span,
-a {
-  font-family: var(--Inter);
-  font-weight: 400;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--Jakarta);
-  font-weight: 400;
-  color: white;
-}
-h1 {
-  font-size: 2.4rem;
-}
-h2 {
-  font-size: 1.8rem;
-}
-h3 {
-  font-size: 1.6rem;
-}
-p,
-span {
-  font-size: 1.4rem;
-}
-h4 {
-  font-size: 1.2rem;
-  font-family: var(--Jakarta);
 }
 
 .splide {

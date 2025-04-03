@@ -1,10 +1,10 @@
 .menu-sidebar {
-  min-width: 19rem;
   padding: 1.2rem;
   background: var(--dark-grey);
   color: white;
 
   display: flex;
+  flex: 1;
   flex-flow: column;
   gap: 0.8rem;
 

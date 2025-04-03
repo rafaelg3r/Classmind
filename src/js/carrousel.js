@@ -1,5 +1,5 @@
 export function initCarousels() {
-  const carousels = ["pt", "mat", "geo", "his", "fis", "bio"] // Removido ""
+  const carousels = ["pt", "mat", "geo", "his", "fis", "bio", "lit", "emp-ino", "dir-hum", "com-mar", "ing", "art", "qmc"] // Removido ""
 
   carousels.forEach((id) => {
     const carouselElement = document.querySelector(`#task-carousel-${id}`)

@@ -1,5 +1,5 @@
 .recentes {
-  min-width: 30rem;
+  flex: 1;
   height: 100vh;
   background: var(--semi-mid-grey);
   color: white;
@@ -7,10 +7,11 @@
   box-shadow: inset 1px 0 0 var(--semi-light-grey);
 }
 .calendar {
+  flex: 1;
   position: absolute;
   right: 0;
   right: 0;
-  min-width: 30rem;
+  min-width: 26rem;
   height: 100vh;
   background: var(--mid-grey);
   padding: 2rem;
