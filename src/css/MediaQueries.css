@@ -1,9 +1,4 @@
 @media screen and (max-width: 1000px) {
-  /* .calendar,
-  .recentes,
-  .toggle-btn-calendar {
-    display: none;
-  } */
   section.general {
     display: flex;
     flex-flow: column !important;
@@ -14,19 +9,33 @@
   }
   main {
     overflow: visible;
+    order: 3;
   }
   .toggle-btn-calendar {
-  position: fixed;
-  right: 0;
-  top: 8rem;
-}
-.calendar {
-  position: fixed;
-  right: 0;
-  top: 0;
-}
+    position: fixed;
+    right: 0;
+    top: 8rem;
+  }
+
+  .recentes {
+    order: 2;
+
+    .closed {
+      display: block;
+    }
+    .desktop-recentes-container{
+      display: none;
+    }
+  }
+
+  .calendar {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
 
   .menu-sidebar {
+    order: 1;
     flex-flow: row;
   }
   .task-card {

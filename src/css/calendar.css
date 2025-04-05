@@ -1,11 +1,58 @@
 .recentes {
+  display: flex;
+  flex-flow: column;
   flex: 1;
+  gap: 2rem;
+
   height: 100vh;
+  padding: 2rem;
   background: var(--semi-mid-grey);
   color: white;
-  padding: 2rem;
   box-shadow: inset 1px 0 0 var(--semi-light-grey);
+
+  div.card-rec {
+    display: flex;
+
+    max-height: 5rem;
+    /* width: 30%; */
+    background-color: var(--dark-grey);
+    border-radius: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    color: white;
+    border: 1px solid var(--semi-light-grey);
+    font-family: var(--Inter);
+
+    cursor: pointer;
+    transition: filter 0.3s;
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    .date {
+      flex-flow: row;
+      gap: 1rem;
+      width: fit-content;
+
+      span,
+      strong {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+  }
+
+  .desktop-recentes-container {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+  }
 }
+
 .calendar {
   flex: 1;
   position: absolute;
@@ -40,6 +87,6 @@
     transform: translateX(-1rem);
     padding-right: 3rem;
     margin-right: -1rem;
-    box-shadow: 0 0 .6rem .2rem var(--blue);
+    box-shadow: 0 0 0.6rem 0.2rem var(--blue);
   }
 }
