@@ -98,7 +98,73 @@
           >
             <h2>Português</h2>
             <div class="splide__track">
-              <ul class="splide__list"></ul>
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="card">
+                    <div class="date">
+                      <strong>11</strong>
+                      <span>abr</span>
+                    </div>
+                    <div class="content">
+                      <span>Grupo, 4 integrantes</span>
+                      <div class="card-title">
+                        <h4>Pequisa Quantitativa</h4>
+                      </div>
+                      <div class="card-desc">
+                        <p>
+                          Elaborar seis questionamentos e coletar dados
+                          "entrevistando" alunos (30 alunos para cada 1
+                          integrante do grupo).
+                        </p>
+
+                        <div class="tag-container">
+                          <div class="tag tag-trab">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M20 13.52V4.28571C20 1.91878 17.9349 0 15.3875 0H4.61255C2.06511 0 0 1.91878 0 4.28571V16.3314C0 18.3575 1.76773 20 3.94834 20H19.0775C19.587 20 20 19.6162 20 19.1429C20 18.6695 19.587 18.2857 19.0775 18.2857H3.94834C2.78671 18.2857 1.84502 17.4108 1.84502 16.3314C1.84502 15.2521 2.78671 14.3771 3.94834 14.3771H19.0775C19.587 14.3771 20 13.9934 20 13.52Z"
+                                fill="#83838B"
+                              />
+                              <path
+                                d="M3.94834 15.4743C3.43885 15.4743 3.02583 15.858 3.02583 16.3314C3.02583 16.8048 3.43885 17.1886 3.94834 17.1886H17.5646C18.0741 17.1886 18.4871 16.8048 18.4871 16.3314C18.4871 15.858 18.0741 15.4743 17.5646 15.4743H3.94834Z"
+                                fill="#83838B"
+                              />
+                            </svg>
+                            <span> Trabalho</span>
+                          </div>
+                          <div class="tag tag-points">
+                            <span> 2 pts </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-cards">
+                      <svg
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-width="0"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        width="1em"
+                        height="1em"
+                      >
+                        <path
+                          d="M7.50004 5C7.50004 5 12.5 8.68242 12.5 10C12.5 11.3177 7.5 15 7.5 15"
+                          stroke="currentColor"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="hr">.</div>
@@ -112,22 +178,7 @@
             <h2>Matemática</h2>
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="task-card border-teste">
-                    <div class="task-info">
-                      <h3 class="task-title">Teste de Matemática</h3>
-                      <p class="task-desc">
-                        Teste com base nos conteúdos de PA. (formulas: Soma
-                        total e n-ésimo termo. "An, A1, n, r, Sn")
-                      </p>
-                    </div>
-                    <div class="task-details">
-                      <h4 class="task-box task-type color-teste">Teste</h4>
-                      <h4 class="task-box task-points">3 pontos</h4>
-                      <h4 class="task-box task-subject">04/04</h4>
-                    </div>
-                  </div>
-                </li>
+               
               </ul>
             </div>
           </div>
@@ -305,10 +356,14 @@
                 <li class="splide__slide">
                   <div class="task-card border-trab">
                     <div class="task-info">
-                      <h3 class="task-title">Mostrar os 3 desenhos elaborados</h3>
+                      <h3 class="task-title">
+                        Mostrar os 3 desenhos elaborados
+                      </h3>
                       <p class="task-desc">
-                        Ao todo, três desenhos devem ter sido criados, sendo eles: 1° Carnaval, 2° Algo sobre a Água
-                        , 3° Desenhar um Sentimento</p>
+                        Ao todo, três desenhos devem ter sido criados, sendo
+                        eles: 1° Carnaval, 2° Algo sobre a Água , 3° Desenhar um
+                        Sentimento
+                      </p>
                     </div>
                     <div class="task-details">
                       <h4 class="task-box task-type color-trab">Trabalho</h4>
@@ -403,12 +458,12 @@
         <h2>Atividades recentes</h2>
       </div>
 
+      <button class="toggle-btn-calendar" onclick="toggleCalendar()">📅</button>
       <div class="calendar hidden" id="calendar">
         <h2>Calendário</h2>
         <p>Datas de entrega e provas.</p>
         <h2 style="color: red; margin-top: 1rem">Indisponivel</h2>
       </div>
-      <button class="toggle-btn-calendar" onclick="toggleCalendar()">📅</button>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script type="module" src="src/js/main.js"></script>

@@ -25,9 +25,15 @@
   --dark-blue: #4654c0;
 
   --atvd: rgb(176, 255, 72);
+  --atvd-2: rgb(176, 255, 72, 0.6);
   --trab: rgb(236, 198, 26);
+  --trab-2: rgb(236, 198, 26, 0.6);
   --teste: rgb(236, 127, 26);
+  --teste-2: rgb(236, 127, 26, 0.6);
   --prova: rgb(236, 33, 26);
+  --prova-2: rgb(236, 33, 26, 0.6);
+  --pts: #29e0a9;
+  --pts-2: rgba(41, 224, 169, 0.6);
 
   --Inter: "Inter";
   --Jakarta: "Plus Jakarta";
@@ -42,4 +48,5 @@
   display: flex;
   justify-content: center;
   padding: 1.5rem;
+  width: 100% !important;
 }

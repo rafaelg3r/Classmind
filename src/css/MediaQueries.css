@@ -8,13 +8,31 @@
     display: flex;
     flex-flow: column !important;
   }
+
+  html {
+    overflow-y: visible;
+  }
+  main {
+    overflow: visible;
+  }
+  .toggle-btn-calendar {
+  position: fixed;
+  right: 0;
+  top: 8rem;
+}
+.calendar {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
   .menu-sidebar {
     flex-flow: row;
   }
   .task-card {
     min-width: 100%;
   }
-  .trimestres a{
+  .trimestres a {
     display: none;
   }
 }

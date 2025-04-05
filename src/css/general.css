@@ -4,7 +4,6 @@ html {
   overflow: hidden;
 }
 body {
-  overflow: hidden;
   display: flex;
   flex-flow: column;
   font-size: 1.6rem;

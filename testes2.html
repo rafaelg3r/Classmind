@@ -1,140 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/css/main.css" />
-    <style>
-      body {
-        background-color: var(--dark-grey);
-        display: grid;
-        place-items: center;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-      }
-      .main-content {
-        overflow-y: visible;
-        min-width: 100rem;
-        z-index: 0;
-        display: block;
-        flex-flow: row;
-        gap: 0;
-
-        background: var(--dark-grey);
-        align-items: normal;
-        padding-bottom: 0;
-        scrollbar-gutter: stable;
-        box-shadow: inset 1px 0 0 var(--semi-light-grey);
-        h3 {
-          padding: 0.5rem 0.8rem 0.5rem 0;
-          background-color: none;
-          border-radius: 0.3rem;
-        }
-      }
-
-      .task-card {
-        background: var(--semi-mid-grey);
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        padding: 2rem;
-        max-width: 100rem;
-        border-radius: 8px;
-        box-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
-        gap: 2rem;
-
-        transition: filter 0.2s;
-
-        &:hover {
-          cursor: pointer;
-          filter: brightness(1.2);
-        }
-
-        .task-info {
-          flex: 1;
-        }
-        .task-title {
-          font-size: 1.8rem;
-          font-weight: bold;
-          background: none;
-          color: white;
-        }
-        .task-desc {
-          margin: 5px 0;
-          font-size: 14px;
-          color: var(--light-light-grey);
-        }
-        .task-details {
-          display: flex;
-          flex-flow: column;
-          text-align: right;
-          font-size: 14px;
-          font-weight: 600;
-        }
-        .task-box {
-          background: var(--semi-light-grey);
-          padding: 3px 8px;
-          border-radius: 5px;
-          margin: 3px 0;
-          width: fit-content;
-        }
-
-        .task-subject {
-          color: var(--light-blue);
-        }
-
-        .task-points {
-          color: #28a745;
-        }
-      }
-      .task-date {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        gap: 1rem;
-        span {
-          color: white;
-          font-weight: 600;
-        }
-      }
-      .separator {
-        background-color: var(--semi-light-grey);
-        height: 8rem;
-        width: 1px;
-        content: " ";
-      }
-      .task-info-separator {
-        display: flex;
-        flex-flow: row;
-        gap: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="./src/css/teste.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="main-content">
-      <div class="task-card border-atvd">
-        <div class="task-date">
-          <span>31</span>
-          <span>Mar</span>
+    <div class="card">
+      <div class="date">
+        <strong>11</strong>
+        <span>abr</span>
+      </div>
+      <div class="content">
+        <span>Grupo, 4 integrantes</span>
+        <div class="card-title">
+          <h4>Pequisa Quantitativa</h4>
         </div>
-          <div class="task-info-separator">
-            <div class="separator"></div>
-            <div class="task-info">
-            <h3 class="task-title">Redação sobre Meio Ambiente</h3>
-            <p class="task-desc">
-              Escrever uma redação de no mínimo 30 linhas sobre os impactos
-              ambientais.
-            </p>
+        <div class="card-desc">
+          <p>
+            Elaborar seis questionamentos e coletar dados "entrevistando" alunos
+            (30 alunos para cada 1 integrante do grupo).
+          </p>
+          <div class="tag-container">
+            <div class="tag tag-trab">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 13.52V4.28571C20 1.91878 17.9349 0 15.3875 0H4.61255C2.06511 0 0 1.91878 0 4.28571V16.3314C0 18.3575 1.76773 20 3.94834 20H19.0775C19.587 20 20 19.6162 20 19.1429C20 18.6695 19.587 18.2857 19.0775 18.2857H3.94834C2.78671 18.2857 1.84502 17.4108 1.84502 16.3314C1.84502 15.2521 2.78671 14.3771 3.94834 14.3771H19.0775C19.587 14.3771 20 13.9934 20 13.52Z"
+                  fill="#83838B"
+                />
+                <path
+                  d="M3.94834 15.4743C3.43885 15.4743 3.02583 15.858 3.02583 16.3314C3.02583 16.8048 3.43885 17.1886 3.94834 17.1886H17.5646C18.0741 17.1886 18.4871 16.8048 18.4871 16.3314C18.4871 15.858 18.0741 15.4743 17.5646 15.4743H3.94834Z"
+                  fill="#83838B"
+                />
+              </svg>
+              <span> Trabalho</span>
+            </div>
+            <div class="tag tag-points">
+              <span>
+                2 pts
+              </span>
+            </div>
           </div>
         </div>
-        <div class="task-details">
-          <h4 class="task-box task-subject">Português</h4>
-          <h4 class="task-box task-type color-atvd">Atividade</h4>
-          <h4 class="task-box task-points">1 ponto</h4>
-        </div>
       </div>
-    </main>
+      <button class="btn-cards">
+        <svg
+          stroke="currentColor"
+          fill="none"
+          stroke-width="0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          width="1em"
+          height="1em"
+        >
+          <path
+            d="M7.50004 5C7.50004 5 12.5 8.68242 12.5 10C12.5 11.3177 7.5 15 7.5 15"
+            stroke="currentColor"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </button>
+    </div>
   </body>
 </html>
