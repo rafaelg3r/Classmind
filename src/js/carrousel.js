@@ -13,6 +13,9 @@ export function initCarousels() {
     "ing",
     "art",
     "qmc",
+    "edu-fis",
+    "res-pro",
+    "red",
   ]
 
   carousels.forEach((id) => {
