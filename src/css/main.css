@@ -63,3 +63,8 @@
 .closed {
   display: none;
 }
+
+.concluido {
+  opacity: 0.3;
+  pointer-events: none;
+}
