@@ -19,6 +19,23 @@ body {
   position: relative;
 }
 
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--blue);
+  padding: 1rem 1.4rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}
+
+.disable {
+  color: var(--light-grey);
+  cursor: default;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -65,22 +82,6 @@ h3 {
   padding: 0.5rem 0.8rem;
   background-color: white;
   border-radius: 0.3rem;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background-color: var(--blue);
-  padding: 1rem 1.4rem;
-  border-radius: 0.6rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: white;
-}
-
-.disable {
-  color: var(--light-grey);
-  cursor: default;
 }
 
 
