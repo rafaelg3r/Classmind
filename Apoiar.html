@@ -4,8 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apoie!</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/apoiar.css" />
   </head>
   <body>
-    <main>Em Construção</main>
+    <main>
+      <header>
+        <a href="index.html">
+          <h1>CLASSMIND</h1>
+        </a>
+        <div class="header-nav">
+          <div class="trimestres">
+            <a href="#" class="trimestre trimestre-selected">1° Trimestre</a>
+            <a href="#" class="trimestre">2° Trimestre</a>
+            <a href="#" class="trimestre">3° Trimestre</a>
+          </div>
+          <button class="btn-grad"><a href="index.html">Voltar</a></button>
+        </div>
+      </header>
+      <div class="container-apoiar">
+        <h1>Apoie com a quantia que desejar!</h1>
+        <div class="image-apoiar">
+          <img src="src/imgs/pix.png" alt="" />
+        </div>
+        <h3>Chave PIX: <span>(54)99279-3669</span></h3>
+        <button class="copy-apoiar">
+          <a href="#" onClick="copyToClipboard()" class="copy-text"
+            >Pix Copia e Cola</a
+          >
+          <img src="src/imgs/svgs/copy-link.svg" alt="" />
+        </button>
+      </div>
+    </main>
+    <script>
+      function copyToClipboard() {
+        const text =
+          "00020126360014BR.GOV.BCB.PIX0114+55549927936695204000053039865802BR5901N6001C62130509CLASSMIND6304487C"
+        const btn = document.querySelector(".copy-apoiar")
+
+        navigator.clipboard.writeText(text).then(
+          function () {
+            btn.style.background = "var(--atvd-2)"
+            setTimeout(() => {
+          btn.style.background = "var(--blue)"
+        }, 2000)
+          },
+          function (err) {
+            console.error("Erro ao copiar texto: ", err)
+          }
+        )
+      }
+    </script>
   </body>
 </html>
