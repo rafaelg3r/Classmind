@@ -1,3 +1,5 @@
+@import url(animations.css);
+
 header {
   display: flex;
   gap: 5rem;
@@ -9,10 +11,29 @@ header {
   color: white;
 
   button {
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, ;
 
+    &::after {
+      position: absolute;
+      content: "Novo!";
+      font-size: 1.2rem;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      padding: 0.2rem 0.6rem;
+      top: -10px;
+      left: -15px;
+      background: var(--teste);
+      background: var(--grad-2);
+      transform: rotate(-7deg);
+      transition: transform 0.4s ease;
+      animation: highlightRotation 1.5s ease-in-out infinite;
+    }
     &:hover {
       background-color: var(--dark-blue);
+
+      &::after {
+        transform: rotate(-21deg);
+      }
     }
   }
 
@@ -45,3 +66,4 @@ h1 {
   font-family: var(--Inter);
   font-weight: 800;
 }
+

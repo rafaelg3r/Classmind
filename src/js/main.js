@@ -1,5 +1,5 @@
-import { initCarousels } from "./carrousel.js";
+import { initCarousels } from "./carrousel.js"
 
 document.addEventListener("DOMContentLoaded", () => {
-  initCarousels();
-});
+  initCarousels()
+})

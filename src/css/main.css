@@ -3,6 +3,7 @@
 @import url("menu-bar.css");
 @import url("calendar.css");
 @import url("main-content.css");
+@import url("animations.css");
 
 @import url("MediaQueries.css");
 
@@ -34,6 +35,9 @@
   --prova-2: rgb(236, 33, 26, 0.6);
   --pts: #29e0a9;
   --pts-2: rgba(41, 224, 169, 0.6);
+
+  --grad-1: linear-gradient(to left, var(--light-blue), var(--dark-blue));
+  --grad-2: linear-gradient(90deg, var(--prova) 0%, var(--teste) 100%);
 
   --Inter: "Inter";
   --Jakarta: "Plus Jakarta";
