@@ -1,16 +1,13 @@
 .week {
-  overflow-y: scroll;
   display: flex;
   flex-flow: column;
   flex: 1;
-  gap: 2rem;
   align-items: center;
   padding: 2rem;
   padding-bottom: 10rem;
   background: var(--semi-mid-grey);
   color: white;
   box-shadow: inset 1px 0 0 var(--semi-light-grey);
-  scrollbar-gutter: stable;
 
   position: relative;
   h2 {
@@ -18,22 +15,7 @@
     text-transform: capitalize;
     font-size: 2rem;
   }
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background: transparent;
-  }
 
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    padding-right: 3px;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: var(--light-grey);
-  }
   &::after {
     position: absolute;
     content: "Novo!";

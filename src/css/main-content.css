@@ -1,11 +1,10 @@
 main {
   overflow-y: scroll;
-  flex: 5 ;
+  flex: 5;
   z-index: 1;
   display: flex;
   flex-flow: column;
   gap: 1rem;
-  
 
   background: var(--dark-grey);
   align-items: left;
@@ -43,7 +42,7 @@ main {
     background-color: var(--light-grey);
   }
 
-  .main-content{
+  .main-content {
     display: flex;
     flex-flow: column;
   }
@@ -55,8 +54,6 @@ main {
     text-align: center;
   }
 }
-
-
 
 .card {
   background-color: var(--grey);
@@ -72,8 +69,9 @@ main {
   padding-right: 1.2rem;
   color: white;
   border: 1px solid var(--semi-light-grey);
+  border-left: 0 !important;
   font-family: var(--Inter);
-  
+
   cursor: pointer;
   transition: filter 0.3s;
   &:hover {
