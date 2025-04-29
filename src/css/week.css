@@ -57,6 +57,13 @@
       background-color: var(--dark-blue);
       color: white;
     }
+    .w-tarde {
+      margin-top: 1rem;
+      width: 100%;
+      p.td {
+        width: 100%;
+      }
+    }
 
     .w-subjects {
       display: flex;
