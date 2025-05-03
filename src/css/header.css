@@ -11,9 +11,9 @@ header {
   color: white;
 
   button {
-    transition: background-color 0.2s, ;
+    transition: background-color 0.2s;
 
-    &::after {
+    /* &::after {
       position: absolute;
       content: "Novo!";
       font-size: 1.2rem;
@@ -27,7 +27,7 @@ header {
       transform: rotate(-7deg);
       transition: transform 0.4s ease;
       animation: highlightRotation 1.5s ease-in-out infinite;
-    }
+    } */
     &:hover {
       background-color: var(--dark-blue);
 
@@ -66,4 +66,3 @@ h1 {
   font-family: var(--Inter);
   font-weight: 800;
 }
-
