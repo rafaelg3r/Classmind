@@ -90,6 +90,9 @@ main {
 .border-prova {
   box-shadow: inset 4px 0 0 var(--prova);
 }
+.border-rtmd {
+  box-shadow: inset 4px 0 0 var(--rtmd);
+}
 
 .date {
   display: flex;
@@ -183,6 +186,12 @@ main {
       border: 2px solid var(--prova-2);
       svg path {
         fill: var(--prova-2);
+      }
+    }
+    .tag-rtmd {
+      border: 2px solid var(--rtmd-2);
+      svg path {
+        fill: var(--rtmd-2);
       }
     }
     .tag-points {
