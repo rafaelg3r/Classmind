@@ -52,7 +52,7 @@ header {
         color: var(--light-blue);
 
         &.trimestre-selected {
-          color: var(--blue);
+          color: var(--rtmd);
         }
       }
     }
