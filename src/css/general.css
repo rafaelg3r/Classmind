@@ -31,10 +31,23 @@ button {
   position: relative;
 }
 
+.closed {
+  display: none !important;
+}
 
 .disable {
   color: var(--light-grey);
   cursor: default;
+  opacity: 0.4;
+}
+
+.collapse {
+  max-height: 0 !important;
+  margin-bottom: -2.4rem !important; 
+}
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 a {

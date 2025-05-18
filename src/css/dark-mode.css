@@ -1,19 +1,5 @@
-@import url("general.css");
-@import url("header.css");
-@import url("menu-bar.css");
-@import url("week.css");
-@import url("main-content.css");
-@import url("animations.css");
-
-@import url("MediaQueries.css");
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 :root {
+  --white-grey: #dfdfdf;
   --light-light-grey: #aeaeb4;
   --light-grey: #83838b;
   --semi-light-grey: #2e2e33;
@@ -43,34 +29,4 @@
 
   --Inter: "Inter";
   --Jakarta: "Plus Jakarta";
-}
-
-.splide {
-  padding: 2rem;
-  background: var(--secondary-color);
-
-  /* &::after{
-    content: "";
-    width: 100%;
-    height: 10px;
-    background-color: var(--semi-light-grey);
-    bottom: 10px;
-    display: flex;
-  } */
-}
-
-.splide__slide {
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem;
-  /* width: 100% !important; */
-}
-
-.closed {
-  display: none;
-}
-
-.concluido {
-  opacity: 0.3;
-  pointer-events: none;
 }

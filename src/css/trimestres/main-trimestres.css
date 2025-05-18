@@ -1,0 +1,42 @@
+@import url("../dark-mode.css");
+@import url("../general.css");
+@import url("../animations.css");
+@import url("./header.css");
+@import url("./menu-bar.css");
+@import url("./week.css");
+@import url("./main-content.css");
+@import url("./MQ-trimestres.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.splide {
+  padding: 2rem;
+  background: var(--secondary-color);
+
+  /* &::after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: var(--semi-light-grey);
+    bottom: 10px;
+    display: flex;
+  } */
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  /* width: 100% !important; */
+}
+
+
+
+.concluido {
+  opacity: 0.3;
+  pointer-events: none;
+}

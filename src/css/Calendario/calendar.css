@@ -1,0 +1,127 @@
+:root {
+            --discord-dark: #36393f;
+            --discord-darker: #2f3136;
+            --discord-darkest: #202225;
+            --discord-text: #dcddde;
+            --discord-accent: #5865f2;
+            --discord-accent-hover: #4752c4;
+        }
+        
+        body {
+            background-color: var(--discord-darkest);
+            color: var(--discord-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .calendar-day:hover {
+            background-color: var(--discord-darker);
+            transform: translateY(-2px);
+        }
+        
+        .current-day {
+            background-color: var(--discord-accent);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .month-selector {
+            transition: all 0.2s ease;
+        }
+        
+        .month-selector:hover {
+            background-color: var(--discord-darker);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .calendar-header {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .month-navigation {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .month-quick-select {
+                overflow-x: auto;
+                padding: 0.5rem;
+            }
+            
+            .month-quick-select .flex {
+                min-width: max-content;
+            }
+            
+            .calendar-day {
+                padding: 0.5rem 0;
+                font-size: 0.875rem;
+            }
+            
+            .weekday-header {
+                font-size: 0.75rem;
+                padding: 0.5rem 0;
+            }
+            
+            #current-month {
+                font-size: 1.125rem;
+            }
+            
+            #current-year {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .calendar-container {
+                border-radius: 0;
+                max-width: 100%;
+                min-height: 100vh;
+            }
+            
+            .calendar-header, .month-navigation, .month-quick-select, .weekday-headers, .calendar-grid {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            
+            .calendar-day {
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .month-selector {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.75rem;
+            }
+            
+            .footer-buttons {
+                flex-direction: column-reverse;
+                gap: 0.5rem;
+                align-items: center;
+            }
+            
+            #selected-date-display {
+                font-size: 0.75rem;
+                text-align: center;
+            }
+            
+            #today-btn {
+                width: 100%;
+            }
+        }

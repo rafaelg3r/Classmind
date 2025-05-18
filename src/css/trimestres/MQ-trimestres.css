@@ -7,7 +7,7 @@
   html {
     overflow-y: visible;
   }
-  main {
+  .main-trimestres {
     overflow: visible;
     order: 3;
   }
