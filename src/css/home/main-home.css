@@ -5,15 +5,22 @@ body {
   background-color: var(--dark-grey);
 }
 
+.home-container-all {
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+}
+
 header {
+  position: sticky;
   background-color: var(--mid-grey);
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   max-width: 25rem;
   height: calc(100vh - 8rem);
-  margin: 2rem;
   border-radius: 1.2rem;
+  box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
 
   a img {
     width: 100%;
@@ -61,7 +68,7 @@ header {
       }
       .nav-cronograma {
         #nav-arrows-toggle svg {
-           transition: transform 0.3s ease;
+          transition: transform 0.3s ease;
         }
       }
       .nav-collapsed-cronograma {
@@ -154,10 +161,106 @@ header {
       }
     }
   }
-  .line {
+}
+
+main {
+  display: flex;
+  gap: 3rem;
+  .home-main-container {
+    display: flex;
+    flex-flow: column;
     width: 100%;
-    height: 0.2rem;
-    background: var(--semi-light-grey);
-    margin: 0;
+    gap: 4rem;
+
+    .top-information {
+      display: flex;
+      width: 100%;
+      max-height: 15rem;
+      gap: 2rem;
+      .top-date {
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(32, 32, 36, 0.5);
+        border-radius: 1.2rem;
+        max-height: 15rem;
+        height: 100%;
+
+        .calendar-img {
+          padding: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--mid-grey);
+          border-radius: 1.2rem;
+        }
+        .time {
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          span {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--white-grey);
+            font-family: var(--Fredoka);
+          }
+        }
+      }
+      .main-info-container{
+        display: flex;
+        flex-flow: column;
+        gap: 2rem;
+        .welcome {
+          background-color: var(--mid-grey);
+          border-radius: 1.2rem;
+          width: 100%;
+          padding: 1.5rem 9.6rem;
+          max-height: 5.4rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          h2 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--white-grey);
+            font-family: var(--Fredoka);
+            letter-spacing: 11.2px;
+          }
+        }
+        .update-status-container{
+          display: flex;
+          gap: 2rem;
+          width: 100%;
+          max-height: 7.6rem;
+          height: 100%;
+
+          .last-update{
+            display: flex;
+            padding: 2rem 1.5rem;
+            background-color: var(--mid-grey);
+            border-radius: 1.2rem;
+            color: var(--white-grey);
+            justify-content: space-between;
+            max-width: 18.7rem;
+            width: 100%;
+
+            h4 {
+              margin: 0;
+              font-size: 1.8rem;
+              font-family: var(--Jakarta);
+              font-weight: 400;
+            }
+            .dia-horario {
+              display: flex;
+              flex-flow: column;
+              justify-content: space-between;
+              font-family: var(--Jakarta);
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
   }
 }

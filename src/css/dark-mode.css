@@ -27,6 +27,7 @@
   --grad-1: linear-gradient(to left, var(--light-blue), var(--dark-blue));
   --grad-2: linear-gradient(90deg, var(--prova) 0%, var(--teste) 100%);
 
-  --Inter: "Inter";
-  --Jakarta: "Plus Jakarta";
+  --Inter: "Inter", sans-serif;
+  --Jakarta: "Plus Jakarta", sans-serif;
+  --Fredoka: "Fredoka", Times, serif;
 }
